@@ -1,1 +1,142 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International News in English</title>
+<!-- 1. skin -->
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.5.0/skin/minimalist.css">
+<style>
+body {margin-left: auto;margin-right:auto;background-color:black;}
+h1 {color:white;text-align:center;font-family:sans-serif}
+a {color: white}
+p {font-family: sans-serif;color:white}
+.flowplayer {
+   width: 326px;
+   height: 245px;
+   display: inline-block;
+   padding: 0;
+}
+img {width:326px}
+.is-playing {background-image:none;}
+
+#wrap { 
+	width: 1000px; 
+	margin: 0 auto; 
+}
+</style>
+
+<!-- 2. jquery library -->
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<!-- 3. flowplayer -->
+<script src="http://releases.flowplayer.org/5.5.0/flowplayer.min.js"></script>
+<!-- global options -->
+<script>
+flowplayer.conf = {
+  splash: true,
+  live: true,
+  native_fullscreen: true
+  };
+</script>
+<body>
+<div id="wrap">
+<h1>International News in English</h1>
+<p>Works only in Safari on Mac or iOS. Other browsers don't support <a href=https://en.wikipedia.org/wiki/HTTP_Live_Streaming>HTTP Live Streaming.</a></p>
+
+<!--Al Jazeera-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/tnZzVFT.png">
+	 <source type="application/x-mpegurl" src="http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8">
+</video>
+</div>
+
+<!--Airang-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/bDbObLR.png">
+	 <source type="application/x-mpegurl" src="http://worldlive-ios.arirang.co.kr/arirang/arirangtvworldios.mp4.m3u8">
+</video>
+</div>
+
+<!--BBC World-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/cGdTUXc.jpg">
+	 <source type="application/x-mpegurl" src="http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_,828,528,264,.m3u8">
+</video>
+</div>
+
+<!--CCTV News (English)-->
+<div class="flowplayer" style="display:none">
+<video controls poster="http://i.imgur.com/yxPsuH7.jpg">
+	 <source type="application/x-mpegurl" src="http://ak.live.cntv.cn/i/cctv9_1@139238/master.m3u8?b=300-500">
+</video>
+</div>
+
+<!--CNN International-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/31xCDKa.png">
+	 <source type="application/x-mpegurl" src="http://hls.novotelecom.ru/streaming/cnn/tvrec/playlist.m3u8">
+</video>
+</div>
+
+<!--CNBC Asia-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/Rn8kW6I.gif">
+	 <source type="application/x-mpegurl" src="http://livestation_hls-lh.akamaihd.net/i/cnbc_en@106428/master.m3u8">
+</video>
+</div>
+
+<!--Deutsche Welle-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/UyK1TYi.jpg">
+	 <source type="application/x-mpegurl" src="http://www.metafilegenerator.de/DWelle/tv-europa/ios/master.m3u8">
+</video>
+</div>
+
+<!--Euronews-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/K7EBy44.png">
+	 <source type="application/x-mpegurl" src="http://hd1.lsops.net/live/smil:euronews_en.smil/playlist.m3u8">
+</video>
+</div>
+
+<!--France24 English-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/keA01Uf.png">
+	 <source type="application/x-mpegurl" src="http://vipwowza.yacast.net/f24_hlslive_en/smil:iphone.fr24en.smil/playlist.m3u8">
+</video>
+</div>
+
+<!--i24 News-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/B15N4Fh.png">
+	 <source type="application/x-mpegurl" src="http://bcoveliveios-i.akamaihd.net/hls/live/215102/master_english/398/master.m3u8">
+</video>
+</div>
+
+<!--NHK World-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/VjOtQZ5.png">
+	 <source type="application/x-mpegurl" src="http://plslive-w.nhk.or.jp/nhkworld/app/live.m3u8">
+</video>
+</div>
+
+<!--Russia Today-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/W38kqqG.png">
+	 <source type="application/x-mpegurl" src="http://odna.octoshape.net/f3f5m2v4/cds/smil:ch4_auto.smil/playlist.m3u8">
+</video>
+</div>
+
+<!--Sky News-->
+<div class="flowplayer">
+<video controls poster="http://i.imgur.com/byuBRWc.jpg">
+	 <source type="application/x-mpegurl" src="http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/skynews/ls_satlink/b_,828,528,264,.m3u8">
+</video>
+</div>
+
+ <p>
+<a href=https://docs.google.com/forms/d/1LQy-UBGEMdbExGlSssTF5UGw3F9qdfLj9pO2EzfOIHs/viewform>Report a broken link</a>
+<p>Powered by <a href=https://flowplayer.org>Flowplayer</a></p>
+</div>
+</body>
+</html>
